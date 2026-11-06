@@ -34,3 +34,6 @@ Upload semua isi folder ini ke root repository GitHub Pages, lalu aktifkan Pages
 - The main “Hubungi saya / Contact me” navigation button and hero WhatsApp button open WhatsApp directly.
 - The “Email saya / Email me” button opens the visitor's default email application using `mailto:`.
 - Contact links use the phone and email supplied by the portfolio owner.
+
+
+Versi 7 menambahkan baris animasi CSS ringan untuk TikTok Shop, Tokopedia, Shopee, KasirKu, Canva, ChatGPT, dan CapCut. Animasi menghormati pengaturan reduced motion perangkat.

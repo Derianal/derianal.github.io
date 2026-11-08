@@ -1,258 +1,129 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="#0b1220" name="theme-color"/>
-<meta content="Portofolio Derian Alfriansyah — pengelolaan TikTok Shop, affiliate partnership, TikTok Ads, AI-assisted UGC, dan pengembangan sistem bisnis." name="description"/>
-<title>Derian Alfriansyah — E-Commerce &amp; Digital Portfolio</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102536">
+  <meta name="description" content="KasirKu — demo portofolio sistem kasir Derian Alfriansyah. Simulasi katalog HPP, harga online dan offline bertingkat, stok, transaksi, riwayat, dan analisis penjualan.">
+  <title>KasirKu — Portfolio Demo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/kasirku-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<a class="skip-link" data-i18n="skip" href="#main">Lewati ke konten</a>
-<header class="site-header">
-<div class="container nav-wrap">
-<a aria-label="Derian Alfriansyah, ke halaman utama" class="brand" href="#home"><span class="brand-mark">D.</span><span>DERIAN ALFRIANSYAH<span class="brand-muted"> / PORTFOLIO</span></span></a>
-<button aria-controls="site-nav" aria-expanded="false" aria-label="Buka navigasi" class="menu-toggle" data-label-close-en="Close navigation" data-label-close-id="Tutup navigasi" data-label-open-en="Open navigation" data-label-open-id="Buka navigasi" type="button"><span></span><span></span></button>
-<nav aria-label="Navigasi utama" class="site-nav" id="site-nav">
-<a data-i18n="nav_about" href="#about">Tentang</a>
-<a data-i18n="nav_skills" href="#skills">Keahlian</a>
-<a data-i18n="nav_projects" href="#projects">Proyek</a>
-<a data-i18n="nav_journey" href="#experience">Perjalanan</a>
-<a data-i18n="nav_evidence" href="#evidence">Bukti</a>
-<a class="nav-contact" data-i18n="nav_contact" href="https://wa.me/6285283966520" target="_blank" rel="noopener noreferrer" aria-label="Hubungi Derian melalui WhatsApp">Hubungi saya <span aria-hidden="true">↗</span></a>
-</nav><div aria-label="Pilih bahasa" class="language-switch" role="group"><button aria-pressed="true" class="language-button active" data-lang="id" type="button">ID</button><button aria-pressed="false" class="language-button" data-lang="en" type="button">EN</button></div>
-</div>
-</header>
-<main id="main">
-<section class="hero section" id="home">
-<div class="container hero-grid">
-<div class="hero-copy">
-<p class="eyebrow" data-i18n-html="hero_eyebrow"><span class="status-dot"></span> PORTOFOLIO PRIBADI · 2025—2026</p>
-<h1 data-i18n-html="hero_title">Mengembangkan bisnis melalui <span class="gradient-text">marketplace, konten, dan teknologi.</span></h1>
-<p class="hero-lead" data-i18n-html="hero_lead">Halo, saya <strong>Derian Alfriansyah</strong>. Saya berpengalaman dalam pengelolaan toko TikTok Shop, affiliate partnership, TikTok Ads, strategi konten, dan pembuatan UGC berbantuan AI. Saya juga mengembangkan proyek sistem kasir yang terhubung dengan Google Sheets.</p>
-<div class="hero-actions">
-<a class="button button-primary" data-i18n="hero_button_projects" href="#projects">Lihat pengalaman <span aria-hidden="true">↓</span></a>
-<a class="button button-ghost" data-i18n="hero_button_contact" href="https://wa.me/6285283966520" target="_blank" rel="noopener noreferrer">Hubungi via WhatsApp <span aria-hidden="true">↗</span></a>
-<a class="button button-ghost" data-i18n="hero_button_email" href="mailto:derian2467@gmail.com">Email saya <span aria-hidden="true">↗</span></a>
-</div>
-<div class="hero-note"><span class="note-line"></span><span data-i18n="hero_note">Marketplace · Affiliate · Content · Business Systems</span></div>
-</div>
-<div aria-label="Panel identitas portofolio" class="hero-visual">
-<div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
-<div class="visual-card">
-<div class="visual-card-top"><span data-i18n="profile_label">PROFILE / 001</span><span class="visual-live" data-i18n="profile_status">● DIGITAL COMMERCE</span></div>
-<img alt="Foto profil Derian Alfriansyah" class="profile-photo" fetchpriority="high" loading="eager" src="assets/derian-profile.webp"/>
-<p class="visual-name">Derian<br/>Alfriansyah</p>
-<p class="visual-role" data-i18n="profile_role">E-Commerce &amp; Digital Operations</p>
-<div class="visual-divider"></div>
-<div class="visual-tags"><span>TikTok Shop</span><span>Affiliate</span><span>AI Content</span></div>
-<div class="visual-index">2025 <span>— 2026</span></div>
-</div>
-<div class="floating-chip chip-top">TIKTOK <b>ADS</b> &amp; SHOP</div>
-<div class="floating-chip chip-bottom"><span class="chip-star">✳</span> DIGITAL WORKFLOW</div>
-</div>
-</div>
-<div class="container hero-bottom"><span data-i18n="hero_location">BASED IN INDONESIA</span><span data-i18n="hero_bottom_topics">COMMERCE · PARTNERSHIP · CONTENT · SYSTEMS</span><a data-i18n="hero_scroll" href="#about">SCROLL TO EXPLORE ↓</a></div>
-</section>
-<section class="tools-section" id="tools" aria-labelledby="tools-title">
-  <div class="container">
-    <div class="tools-heading">
-      <div>
-        <p class="eyebrow" data-i18n="tools_eyebrow">TOOLS &amp; PLATFORM DIGITAL</p>
-        <h2 id="tools-title" data-i18n-html="tools_title">Platform yang mendukung <span class="gradient-text">alur kerja saya.</span></h2>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#kasir" aria-label="KasirKu beranda">
+        <span class="brand-icon">K</span>
+        <span class="brand-copy"><b>KasirKu</b><small>POINT OF SALE SYSTEM</small></span>
+      </a>
+      <div class="workspace-card">
+        <span class="workspace-avatar">KD</span>
+        <span class="workspace-copy"><b>KasirKu Demo</b><small>Data contoh / sandbox</small></span>
+        <span class="workspace-chevron">⌄</span>
       </div>
-      <p class="tools-intro" data-i18n="tools_intro">Aplikasi dan platform yang saya gunakan untuk mengelola marketplace, membuat konten, mendukung operasional, dan mengembangkan sistem bisnis.</p>
-    </div>
-    <div class="tools-marquee" aria-label="Platform dan aplikasi yang digunakan">
-      <div class="tools-track">
-        <div class="tools-group">
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-tiktok" aria-hidden="true"><svg viewBox="0 0 32 32"><path class="tiktok-shadow-cyan" d="M18.3 4.1v14.2a6.1 6.1 0 1 1-5.5-6.1"/><path class="tiktok-shadow-pink" d="M19.8 5.1c.7 2.3 2.2 3.9 5.1 4.7"/><path class="tiktok-main" d="M18.3 4.1v14.2a6.1 6.1 0 1 1-5.5-6.1M18.5 4.5c.7 2.7 2.4 4.6 5.5 5.2"/></svg></span>
-            <span class="tool-name">TikTok Shop</span><span class="tool-type">COMMERCE</span>
-          </article>
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-tokopedia" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 11.5h18l-1.3 15H8.3L7 11.5Z"/><path d="M11 12V9a5 5 0 0 1 10 0v3"/><circle cx="12.5" cy="18" r="1.25"/><circle cx="19.5" cy="18" r="1.25"/><path d="M13 22c1.8 1.4 4.2 1.4 6 0"/></svg></span>
-            <span class="tool-name">Tokopedia</span><span class="tool-type">MARKETPLACE</span>
-          </article>
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-shopee" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6.5 11h19l-1.3 16H7.8L6.5 11Z"/><path d="M11 12V9a5 5 0 0 1 10 0v3"/><path d="M19.8 16.4c-.8-1.1-2-1.6-3.7-1.6-1.8 0-3 .8-3 2s1 1.7 3 2.2 3.2 1 3.2 2.4-1.2 2.3-3.3 2.3c-1.6 0-2.9-.6-3.8-1.7"/></svg></span>
-            <span class="tool-name">Shopee</span><span class="tool-type">MARKETPLACE</span>
-          </article>
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-kasirku" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M10 10h12v5H10zM10 19h3m3 0h3m3 0h-1M10 23h3m3 0h6"/></svg></span>
-            <span class="tool-name">KasirKu</span><span class="tool-type">BUSINESS SYSTEM</span>
-          </article>
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-canva" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><path d="M21.7 11.1c-1.2-1.1-2.7-1.6-4.5-1.6-4.3 0-7.1 3.1-7.1 7.1s2.6 7 6.8 7c1.9 0 3.5-.6 4.8-1.8"/></svg></span>
-            <span class="tool-name">Canva</span><span class="tool-type">DESIGN</span>
-          </article>
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-chatgpt" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 5.2a6 6 0 0 1 10 4.5v1.1a6 6 0 0 1-1.2 10.7 6 6 0 0 1-8.8 5.2 6 6 0 0 1-10-4.5v-1.1A6 6 0 0 1 7.2 10.4 6 6 0 0 1 16 5.2Z"/><path d="m11.1 9 9.8 5.7M7 17l9 5.2m5.9-12.8-9.8 17M25 11l-9 5.2m9 4.2-9-5.2M11 26l9.8-17"/></svg></span>
-            <span class="tool-name">ChatGPT</span><span class="tool-type">AI ASSISTANT</span>
-          </article>
-          <article class="tool-card" role="listitem">
-            <span class="tool-mark mark-capcut" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 9h8l14 14h-8L5 9Zm0 14h8L27 9h-8L5 23Z"/></svg></span>
-            <span class="tool-name">CapCut</span><span class="tool-type">VIDEO EDITING</span>
-          </article>
-        </div>
-        <div class="tools-group" aria-hidden="true">
-          <article class="tool-card"><span class="tool-mark mark-tiktok"><svg viewBox="0 0 32 32"><path class="tiktok-shadow-cyan" d="M18.3 4.1v14.2a6.1 6.1 0 1 1-5.5-6.1"/><path class="tiktok-shadow-pink" d="M19.8 5.1c.7 2.3 2.2 3.9 5.1 4.7"/><path class="tiktok-main" d="M18.3 4.1v14.2a6.1 6.1 0 1 1-5.5-6.1M18.5 4.5c.7 2.7 2.4 4.6 5.5 5.2"/></svg></span><span class="tool-name">TikTok Shop</span><span class="tool-type">COMMERCE</span></article>
-          <article class="tool-card"><span class="tool-mark mark-tokopedia"><svg viewBox="0 0 32 32"><path d="M7 11.5h18l-1.3 15H8.3L7 11.5Z"/><path d="M11 12V9a5 5 0 0 1 10 0v3"/><circle cx="12.5" cy="18" r="1.25"/><circle cx="19.5" cy="18" r="1.25"/><path d="M13 22c1.8 1.4 4.2 1.4 6 0"/></svg></span><span class="tool-name">Tokopedia</span><span class="tool-type">MARKETPLACE</span></article>
-          <article class="tool-card"><span class="tool-mark mark-shopee"><svg viewBox="0 0 32 32"><path d="M6.5 11h19l-1.3 16H7.8L6.5 11Z"/><path d="M11 12V9a5 5 0 0 1 10 0v3"/><path d="M19.8 16.4c-.8-1.1-2-1.6-3.7-1.6-1.8 0-3 .8-3 2s1 1.7 3 2.2 3.2 1 3.2 2.4-1.2 2.3-3.3 2.3c-1.6 0-2.9-.6-3.8-1.7"/></svg></span><span class="tool-name">Shopee</span><span class="tool-type">MARKETPLACE</span></article>
-          <article class="tool-card"><span class="tool-mark mark-kasirku"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M10 10h12v5H10zM10 19h3m3 0h3m3 0h-1M10 23h3m3 0h6"/></svg></span><span class="tool-name">KasirKu</span><span class="tool-type">BUSINESS SYSTEM</span></article>
-          <article class="tool-card"><span class="tool-mark mark-canva"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><path d="M21.7 11.1c-1.2-1.1-2.7-1.6-4.5-1.6-4.3 0-7.1 3.1-7.1 7.1s2.6 7 6.8 7c1.9 0 3.5-.6 4.8-1.8"/></svg></span><span class="tool-name">Canva</span><span class="tool-type">DESIGN</span></article>
-          <article class="tool-card"><span class="tool-mark mark-chatgpt"><svg viewBox="0 0 32 32"><path d="M16 5.2a6 6 0 0 1 10 4.5v1.1a6 6 0 0 1-1.2 10.7 6 6 0 0 1-8.8 5.2 6 6 0 0 1-10-4.5v-1.1A6 6 0 0 1 7.2 10.4 6 6 0 0 1 16 5.2Z"/><path d="m11.1 9 9.8 5.7M7 17l9 5.2m5.9-12.8-9.8 17M25 11l-9 5.2m9 4.2-9-5.2M11 26l9.8-17"/></svg></span><span class="tool-name">ChatGPT</span><span class="tool-type">AI ASSISTANT</span></article>
-          <article class="tool-card"><span class="tool-mark mark-capcut"><svg viewBox="0 0 32 32"><path d="M5 9h8l14 14h-8L5 9Zm0 14h8L27 9h-8L5 23Z"/></svg></span><span class="tool-name">CapCut</span><span class="tool-type">VIDEO EDITING</span></article>
-        </div>
+      <nav class="side-nav" aria-label="Navigasi aplikasi">
+        <button class="nav-item active" type="button" data-view="kasir"><span class="nav-symbol">▦</span>Kasir</button>
+        <button class="nav-item" type="button" data-view="stok"><span class="nav-symbol">▤</span>Stok &amp; harga</button>
+        <button class="nav-item" type="button" data-view="riwayat"><span class="nav-symbol">↻</span>Riwayat transaksi</button>
+        <button class="nav-item" type="button" data-view="analisis"><span class="nav-symbol">⌁</span>Analisis penjualan</button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note"><b><span class="demo-dot"></span> MODE DEMO</b><p>Seluruh data disimpan di browser ini. Tidak mengakses spreadsheet atau data toko asli.</p></div>
+      <a class="back-link" href="../" target="_self">← Kembali ke portofolio</a>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Buka navigasi">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-sep">/</span><b id="crumb-title">Kasir</b></div>
+        <div class="topbar-right"><span class="demo-pill"><i></i> DATA SIMULASI</span><span class="date-label" id="today-label"></span><span class="user-avatar" title="Demo Derian">D</span></div>
+      </header>
+
+      <div class="demo-banner" role="note">
+        <span class="banner-icon">ⓘ</span>
+        <div><b>Ini adalah demo portofolio, bukan sistem produksi.</b><span>Produk, SKU, HPP, harga, stok, dan transaksi yang terlihat adalah data contoh. Transaksi tidak mengubah Google Sheets dan QRIS tidak memproses pembayaran.</span></div>
+        <button type="button" id="dismiss-banner" aria-label="Tutup pemberitahuan">×</button>
       </div>
-    </div>
-    <p class="tools-footnote" data-i18n="tools_note">Ikon pada bagian ini merupakan ilustrasi identifikasi platform dan aplikasi, bukan pernyataan kemitraan atau dukungan resmi.</p>
+
+      <section class="view active" id="view-kasir">
+        <div class="page-heading"><div><p class="eyebrow">POINT OF SALE / 01</p><h1>Kasir <span>penjualan</span></h1><p class="subheading">Pilih mode harga, masukkan produk ke keranjang, lalu simulasikan transaksi.</p></div><div class="shift-tag"><span class="live-dot"></span> Sesi demo aktif</div></div>
+        <div class="summary-grid">
+          <article class="summary-card"><span class="summary-icon teal">Rp</span><div><small>Omzet hari ini</small><strong id="today-revenue">Rp0</strong><em>Transaksi contoh &amp; simulasi</em></div></article>
+          <article class="summary-card"><span class="summary-icon blue">▤</span><div><small>Transaksi hari ini</small><strong id="today-count">0</strong><em>Tersimpan di browser ini</em></div></article>
+          <article class="summary-card"><span class="summary-icon amber">▣</span><div><small>Produk katalog</small><strong id="product-count">0</strong><em>Sinkronisasi sumber demo</em></div></article>
+          <article class="summary-card"><span class="summary-icon violet">↗</span><div><small>Laba kotor hari ini</small><strong id="today-profit">Rp0</strong><em>Harga jual dikurangi HPP contoh</em></div></article>
+        </div>
+
+        <div class="pos-layout">
+          <section class="panel catalog-panel">
+            <div class="panel-heading"><div><p class="eyebrow">CATALOG</p><h2>Pilih barang</h2><p>Harga mengikuti mode yang dipilih.</p></div><span class="count-pill" id="catalog-count">0 produk</span></div>
+            <div class="catalog-controls">
+              <label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Cari nama produk atau SKU…" autocomplete="off"><kbd>Ctrl K</kbd></label>
+              <label class="select-field"><span>Mode harga</span><select id="price-mode"><option value="online">Harga online</option><option value="offline1">Offline · 1 pcs</option><option value="offline10">Offline · 10 pcs</option><option value="offline20">Offline · 20+ pcs</option></select></label>
+            </div>
+            <div class="source-hint"><span class="hint-dot"></span> Sumber simulasi: HPP Online/Offline Benih Baik &amp; HPP Rempah · angka bukan harga aktual</div>
+            <div class="product-grid" id="product-grid" aria-live="polite"></div>
+            <div class="empty-state hidden" id="product-empty">Produk tidak ditemukan atau harga untuk mode ini belum tersedia.</div>
+          </section>
+
+          <aside class="panel order-panel">
+            <div class="order-head"><div><p class="eyebrow">CURRENT ORDER</p><h2>Keranjang transaksi</h2></div><button class="text-button" id="clear-cart" type="button">Kosongkan</button></div>
+            <div class="order-meta"><span id="order-number">#KSR-DEMO</span><span class="pending-tag"><i></i> Belum dibayar</span></div>
+            <div class="field"><label for="customer-name">Nama pelanggan <span>Opsional</span></label><input class="text-input" id="customer-name" placeholder="Pelanggan umum"></div>
+            <div class="cart-list" id="cart-list"><div class="cart-empty"><span>＋</span><b>Keranjang masih kosong</b><small>Pilih produk untuk memulai transaksi.</small></div></div>
+            <div class="order-calculation">
+              <div class="calc-row"><span>Total item</span><b id="total-qty">0 pcs</b></div>
+              <div class="calc-row total-row"><span>Total pembayaran</span><strong id="order-total">Rp0</strong></div>
+            </div>
+            <div class="payment-block">
+              <label class="field-label" for="payment-method">Metode pembayaran</label>
+              <select class="text-input" id="payment-method"><option value="Tunai">Tunai</option><option value="QRIS">QRIS (pencatatan demo)</option></select>
+              <div id="cash-fields"><label class="field-label" for="cash-received">Uang diterima (Rp)</label><input class="text-input" id="cash-received" type="number" min="0" step="1" inputmode="numeric" placeholder="Masukkan nominal"><div class="change-row"><span>Kembalian</span><b id="change-due">Rp0</b></div></div>
+              <div class="payment-note" id="payment-note">Tunai: masukkan nominal yang diterima untuk menghitung kembalian.</div>
+            </div>
+            <button class="checkout-button" id="checkout-button" type="button" disabled><span>Selesaikan transaksi</span><b id="checkout-total">Rp0 →</b></button>
+            <p class="order-footnote">Simulasi checkout. Tidak ada uang atau pembayaran sungguhan yang diproses.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-stok">
+        <div class="page-heading"><div><p class="eyebrow">INVENTORY &amp; ACTIVE PRICES / 02</p><h1>Stok <span>&amp; harga</span></h1><p class="subheading">Kelola stok dan nilai HPP/harga aktif seperti alur di KasirKu asli.</p></div><button class="primary-button" id="sync-catalog" type="button">↻ Simulasikan sinkronisasi</button></div>
+        <div class="sync-explainer"><div class="sync-icon">↕</div><div><b>Alur sinkronisasi katalog HPP</b><p>Demo meniru aturan aplikasi asli: nilai harga yang sudah diisi secara manual dipertahankan; sinkronisasi hanya mengisi nilai yang masih kosong. Spreadsheet asli tidak diakses.</p></div></div>
+        <div class="panel table-panel"><div class="panel-heading"><div><h2>Daftar stok &amp; harga aktif</h2><p id="stock-count-label">0 produk terdaftar.</p></div><input class="text-input table-search" id="stock-search" placeholder="Cari nama produk / SKU…"></div>
+          <div class="table-scroll"><table><thead><tr><th>Produk / SKU</th><th>Sumber</th><th>HPP</th><th>Harga online</th><th>Offline 1 pcs</th><th>Offline 10 pcs</th><th>Offline 20+ pcs</th><th>Stok</th><th>Aksi</th></tr></thead><tbody id="stock-body"></tbody></table></div>
+          <div class="table-note">Edit HPP dan harga aktif di aplikasi demo ini. Untuk menambah stok, gunakan tombol <b>Atur</b>. Perubahan hanya tersimpan pada browser yang digunakan.</div>
+        </div>
+      </section>
+
+      <section class="view" id="view-riwayat">
+        <div class="page-heading"><div><p class="eyebrow">TRANSACTION RECORDS / 03</p><h1>Riwayat <span>transaksi</span></h1><p class="subheading">Rincian transaksi contoh dan simulasi yang tersimpan di browser ini.</p></div><span class="count-pill" id="history-count">0 transaksi</span></div>
+        <div class="summary-grid compact-summary"><article class="summary-card"><span class="summary-icon teal">Rp</span><div><small>Total omzet</small><strong id="history-revenue">Rp0</strong><em>Seluruh transaksi demo</em></div></article><article class="summary-card"><span class="summary-icon blue">▤</span><div><small>Jumlah transaksi</small><strong id="history-orders">0</strong><em>Catatan tersimpan lokal</em></div></article><article class="summary-card"><span class="summary-icon violet">↗</span><div><small>Total laba kotor</small><strong id="history-profit">Rp0</strong><em>Berdasarkan HPP contoh</em></div></article></div>
+        <div class="panel table-panel"><div class="panel-heading"><div><h2>Semua transaksi</h2><p>Buka kembali detail transaksi dan struk demo.</p></div><input class="text-input table-search" id="history-search" placeholder="Cari ID / pelanggan…"></div><div class="table-scroll"><table><thead><tr><th>ID transaksi</th><th>Tanggal &amp; waktu</th><th>Pelanggan</th><th>Metode</th><th>Total</th><th>Laba kotor</th><th></th></tr></thead><tbody id="history-body"></tbody></table></div><div class="empty-state hidden" id="history-empty">Belum ada transaksi. Buat transaksi pertama dari menu Kasir.</div></div>
+      </section>
+
+      <section class="view" id="view-analisis">
+        <div class="page-heading"><div><p class="eyebrow">SALES ANALYTICS / 04</p><h1>Analisis <span>penjualan</span></h1><p class="subheading">Ringkasan omzet, laba kotor, transaksi, produk terjual, dan produk terlaris.</p></div></div>
+        <div class="panel analytics-filter"><div class="filter-fields"><label class="select-field"><span>Rentang analisis</span><select id="analytics-period"><option value="hari_ini">Hari ini</option><option value="7_hari" selected>7 hari terakhir</option><option value="30_hari">30 hari terakhir</option><option value="tanggal">Pilih tanggal</option></select></label><label class="select-field hidden" id="analytics-date-wrap"><span>Tanggal</span><input class="text-input" type="date" id="analytics-date"></label></div><span class="period-label" id="analytics-range">Periode analisis</span></div>
+        <div class="analytics-kpis"><article class="metric-card"><span>Total omzet</span><strong id="metric-revenue">Rp0</strong><small id="metric-revenue-compare">Dibanding periode sebelumnya</small></article><article class="metric-card"><span>Laba kotor</span><strong id="metric-profit">Rp0</strong><small id="metric-profit-compare">Dibanding periode sebelumnya</small></article><article class="metric-card"><span>Jumlah transaksi</span><strong id="metric-orders">0</strong><small id="metric-orders-compare">Dibanding periode sebelumnya</small></article><article class="metric-card"><span>Produk terjual</span><strong id="metric-qty">0</strong><small>Jumlah kuantitas barang</small></article><article class="metric-card"><span>Rata-rata transaksi</span><strong id="metric-average">Rp0</strong><small>Omzet ÷ jumlah transaksi</small></article></div>
+        <div class="analytics-layout"><section class="panel chart-panel"><div class="panel-heading"><div><h2>Grafik penjualan</h2><p>Batang menunjukkan omzet; garis menunjukkan laba kotor.</p></div><span class="chart-legend"><i class="legend-revenue"></i> Omzet <i class="legend-profit"></i> Laba</span></div><div class="chart-wrap"><canvas id="sales-chart" width="900" height="320" role="img" aria-label="Grafik omzet dan laba kotor"></canvas></div><div class="empty-chart hidden" id="chart-empty">Belum ada transaksi pada periode ini.</div></section>
+          <section class="panel top-products-panel"><div class="panel-heading"><div><h2>5 produk terlaris</h2><p>Berdasarkan kuantitas terjual.</p></div></div><div id="top-products"></div><div class="empty-chart hidden" id="top-empty">Belum ada produk terjual pada periode ini.</div></section></div>
+        <p class="analytics-note">Perhitungan demo mengikuti konsep KasirKu: omzet adalah subtotal penjualan, laba kotor dihitung dari (harga jual − HPP) × jumlah, dan perbandingan menggunakan periode sebelumnya yang setara.</p>
+      </section>
+
+      <footer class="app-footer"><span>KasirKu · Portfolio project by <b>Derian Alfriansyah</b></span><button type="button" id="reset-demo" class="reset-link">Reset data demo</button></footer>
+    </main>
   </div>
-</section>
-<section class="section section-light" id="about">
-<div class="container two-column">
-<div><p class="eyebrow eyebrow-dark" data-i18n="about_eyebrow">01 / TENTANG SAYA</p><h2 data-i18n-html="about_title">Perjalanan yang membentuk <span class="text-accent">cara saya bekerja.</span></h2></div>
-<div class="about-content">
-<p data-i18n="about_p1">Saya, Derian Alfriansyah, memiliki pengalaman dalam pengelolaan toko online, pengembangan aktivitas affiliate, strategi konten, dan operasional bisnis digital. Saya pernah membantu mengelola beberapa toko di TikTok Shop, menangani kebutuhan konten dan iklan, serta membangun kolaborasi dengan brand.</p>
-<p data-i18n="about_p2">Sebelum masuk lebih jauh ke dunia bisnis, saya menjalani kehidupan di Pondok Pesantren Al-Bahjah selama kurang lebih sembilan tahun dan pernah mengemban amanah sebagai murāqib atau pengasuh. Pengalaman tersebut menjadi bagian penting dari perjalanan pribadi dan tanggung jawab saya.</p>
-<p data-i18n-html="about_p3">Di sisi teknologi, saya mengembangkan proyek <strong>KasirKu</strong>, sebuah sistem kasir berbasis web yang dirancang agar dapat digunakan melalui HP maupun laptop dan terhubung dengan data Google Sheets.</p>
-<div class="about-facts"><div><strong>2025</strong><span data-i18n="fact_2025">Agency &amp; affiliate</span></div><div><strong>2026</strong><span data-i18n="fact_2026">Multi-store operations</span></div><div><strong>01</strong><span data-i18n="fact_kasirku">KasirKu project</span></div></div>
-</div>
-</div>
-</section>
-<section class="section section-dark" id="skills">
-<div class="container">
-<div class="section-heading"><div><p class="eyebrow" data-i18n="skills_eyebrow">02 / KEAHLIAN</p><h2 data-i18n-html="skills_title">Bidang yang saya <span class="gradient-text">kerjakan dan kembangkan.</span></h2></div><p class="heading-side" data-i18n="skills_intro">Keterampilan berikut disusun dari pengalaman praktik, proyek, dan pembelajaran. Rincian tiap kemampuan dapat diperkuat dengan contoh hasil kerja.</p></div>
-<div class="skills-grid">
-<article class="skill-card"><span class="skill-number">01</span><div class="skill-icon">▣</div><h3 data-i18n="skill1_title">TikTok Shop Management</h3><p data-i18n="skill1_desc">Pengelolaan toko, produk, listing, operasional, live commerce, dan pemantauan performa.</p><div class="skill-line"><span>STORE OPERATIONS</span><span>PRODUCT LISTING</span></div></article>
-<article class="skill-card"><span class="skill-number">02</span><div class="skill-icon">↗</div><h3 data-i18n="skill2_title">TikTok Ads &amp; GMV Max</h3><p data-i18n="skill2_desc">Pemantauan iklan, evaluasi metrik, analisis performa kampanye, dan pertimbangan optimasi.</p><div class="skill-line"><span>ADS MONITORING</span><span>PERFORMANCE</span></div></article>
-<article class="skill-card"><span class="skill-number">03</span><div class="skill-icon">◇</div><h3 data-i18n="skill3_title">Affiliate &amp; Agency</h3><p data-i18n="skill3_desc">Pengelolaan aktivitas agency affiliate dan koordinasi kolaborasi dengan brand.</p><div class="skill-line"><span>PARTNERSHIP</span><span>BRAND COLLAB</span></div></article>
-<article class="skill-card"><span class="skill-number">04</span><div class="skill-icon">✳</div><h3 data-i18n="skill4_title">Content Strategy</h3><p data-i18n="skill4_desc">Pengembangan ide, sudut komunikasi, brief kreatif, hook, CTA, dan perencanaan konten.</p><div class="skill-line"><span>IDEATION</span><span>CREATIVE BRIEF</span></div></article>
-<article class="skill-card"><span class="skill-number">05</span><div class="skill-icon">▷</div><h3 data-i18n="skill5_title">AI-assisted UGC</h3><p data-i18n="skill5_desc">Pembuatan konsep dan materi UGC dengan dukungan AI untuk kebutuhan konten promosi.</p><div class="skill-line"><span>UGC</span><span>AI WORKFLOW</span></div></article>
-<article class="skill-card"><span class="skill-number">06</span><div class="skill-icon">⌕</div><h3 data-i18n="skill6_title">Marketplace SEO</h3><p data-i18n="skill6_desc">Penyusunan judul, deskripsi, kata kunci, varian, dan informasi produk untuk listing.</p><div class="skill-line"><span>SEO WRITING</span><span>PRODUCT COPY</span></div></article>
-<article class="skill-card"><span class="skill-number">07</span><div class="skill-icon">▦</div><h3 data-i18n="skill7_title">Business Systems</h3><p data-i18n="skill7_desc">Google Sheets, perhitungan HPP dan margin, alur administrasi, serta pengembangan sistem kasir.</p><div class="skill-line"><span>GOOGLE SHEETS</span><span>APPS SCRIPT</span></div></article>
-<article class="skill-card"><span class="skill-number">08</span><div class="skill-icon">{ }</div><h3 data-i18n="skill8_title">Web Development Dasar</h3><p data-i18n="skill8_desc">HTML, CSS, dan JavaScript untuk membangun website serta prototipe aplikasi sederhana.</p><div class="skill-line"><span>HTML / CSS</span><span>JAVASCRIPT</span></div></article>
-</div>
-</div>
-</section>
-<section class="section section-light" id="projects">
-<div class="container">
-<div class="section-heading project-heading"><div><p class="eyebrow eyebrow-dark" data-i18n="projects_eyebrow">03 / PROYEK &amp; PENGALAMAN PILIHAN</p><h2 data-i18n-html="projects_title">Pengalaman nyata di <span class="text-accent">dunia digital.</span></h2></div><p class="heading-side heading-side-light" data-i18n="projects_intro">Portofolio ini merangkum toko yang pernah dikelola, kolaborasi affiliate, pengelolaan iklan dan konten, serta proyek sistem yang dikembangkan.</p></div>
-<div aria-label="Filter proyek" class="filter-bar" role="group">
-<button aria-pressed="true" class="filter-button active" data-filter="all" data-i18n="filter_all" type="button">Semua</button>
-<button aria-pressed="false" class="filter-button" data-filter="marketplace" data-i18n="filter_shop" type="button">TikTok Shop</button>
-<button aria-pressed="false" class="filter-button" data-filter="affiliate" data-i18n="filter_affiliate" type="button">Affiliate</button>
-<button aria-pressed="false" class="filter-button" data-filter="content" data-i18n="filter_ads" type="button">Ads &amp; Konten</button>
-<button aria-pressed="false" class="filter-button" data-filter="systems" data-i18n="filter_systems" type="button">Sistem</button>
-</div>
-<div class="projects-grid">
-<article class="project-card" data-category="marketplace">
-<div class="project-art art-store"><span class="art-label">TIKTOK SHOP / 2025</span><div class="store-visual"><span class="store-mark">A&amp;Y</span><strong>FASHION<br/>COMMERCE</strong><small>A&amp;Y FASHIONSTYLE · KORINA STYLE</small></div></div>
-<div class="project-info"><div class="project-meta"><span>STORE MANAGEMENT</span><span>01 / 06</span></div><h3 data-i18n="project1_title">Pengelolaan Toko TikTok Shop — 2025</h3><p data-i18n="project1_desc">Pengalaman membantu pengelolaan toko A&amp;Y FashionStyle dan Korina Style, termasuk aktivitas operasional toko, produk, konten, live commerce, dan pemantauan performa.</p><div class="project-tags"><span>A&amp;Y FashionStyle</span><span>Korina Style</span><span>Store Operations</span></div><span class="project-status" data-i18n="project1_status">PENGALAMAN PRAKTIK · 2025</span></div>
-</article>
-<article class="project-card" data-category="affiliate">
-<div class="project-art art-affiliate"><span class="art-label">AGENCY &amp; AFFILIATE PARTNERSHIP / 2025</span><div class="affiliate-visual"><span>PARTNERSHIP</span><strong>BRAND<br/>COLLABORATION</strong><div class="brand-pills"><i>ALKAHF</i><i>ALAMME</i><i>+ OTHERS</i></div></div></div>
-<div class="project-info"><div class="project-meta"><span>AGENCY MANAGEMENT</span><span>02 / 06</span></div><h3 data-i18n="project2_title">Masjid Affiliate Alkahfi</h3><p data-i18n="project2_desc">Pengalaman sebagai manager agency di Masjid Affiliate Alkahfi, Bunut, Bandung, serta menjalankan peran sebagai TikTok Affiliate Partner (TAP) dan mendukung kolaborasi dengan brand.</p><div class="project-tags"><span>Agency Manager</span><span>TikTok Affiliate Partner</span><span>ALKAHF</span><span>ALAMME</span></div><span class="project-status" data-i18n="project2_status">BRAND COLLABORATION · 2025</span></div>
-</article>
-<article class="project-card" data-category="marketplace">
-<div class="project-art art-multistore"><span class="art-label">MULTI-STORE OPERATIONS / 2026</span><div class="store-stack"><span>BENIH BAIK GROUP</span><span>BENIH FAST GROUP</span><span>PETANI KOTA STORE</span><span>KELAPA GADING 3 · KELAPA GADING 2</span></div></div>
-<div class="project-info"><div class="project-meta"><span>TIKTOK SHOP</span><span>03 / 06</span></div><h3 data-i18n="project3_title">Pengelolaan Multi-Store — 2026</h3><p data-i18n="project3_desc">Pengalaman membantu pengelolaan beberapa toko TikTok Shop pada kategori kebutuhan tanaman dan produk terkait, mencakup listing, informasi produk, operasional, dan aktivitas penjualan.</p><div class="project-tags"><span>Benih Baik Group</span><span>Benih Fast Group</span><span>Petani Kota Store</span><span>Kelapa Gading 3</span><span>Kelapa Gading 2</span></div><span class="project-status" data-i18n="project3_status">5 TOKO · PENGALAMAN 2026</span></div>
-</article>
-<article class="project-card" data-category="content">
-<div class="project-art art-ads"><span class="art-label">TIKTOK ADS / CAMPAIGN ANALYSIS</span><div class="ads-panel"><div class="ads-top"><b>CAMPAIGN PERFORMANCE</b><span>LIVE DATA VIEW</span></div><div class="ads-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="ads-foot"><span>MONITOR</span><span>ANALYZE</span><span>OPTIMIZE</span></div></div></div>
-<div class="project-info"><div class="project-meta"><span>PAID MEDIA</span><span>04 / 06</span></div><h3 data-i18n="project4_title">TikTok Ads &amp; Performance Monitoring</h3><p data-i18n="project4_desc">Pengalaman memantau aktivitas iklan TikTok, termasuk GMV Max, membaca metrik performa, mengevaluasi kampanye, dan mempertimbangkan langkah optimasi toko.</p><div class="project-tags"><span>TikTok Ads</span><span>GMV Max</span><span>Performance Analysis</span></div><span class="project-status" data-i18n="project4_status">ANALISIS &amp; OPERASIONAL IKLAN</span></div>
-</article>
-<article class="project-card" data-category="content">
-<div class="project-art art-ugc"><span class="art-label">CONTENT STRATEGY / AI-ASSISTED UGC</span><div class="ugc-phone"><div class="ugc-screen"><span>UGC VIDEO</span><strong>HOOK<br/>STORY<br/>CTA</strong><small>AI-ASSISTED CONTENT</small></div></div><div class="ugc-orb"></div></div>
-<div class="project-info"><div class="project-meta"><span>CONTENT PRODUCTION</span><span>05 / 06</span></div><h3 data-i18n="project5_title">Strategi Konten &amp; UGC Berbantuan AI</h3><p data-i18n="project5_desc">Pengembangan ide konten, sudut komunikasi produk, hook, CTA, dan pembuatan konsep atau materi UGC dengan dukungan AI untuk kebutuhan pemasaran.</p><div class="project-tags"><span>Content Ideation</span><span>AI UGC</span><span>Script &amp; CTA</span></div><span class="project-status" data-i18n="project5_status">CONTENT DEVELOPMENT</span></div>
-</article>
-<article class="project-card" data-category="systems">
-<div class="project-art art-kasir"><span class="art-label">KASIRKU / WEB APP CONCEPT</span><div class="kasir-screen"><div class="kasir-head"><b>KASIRKU</b><span>WEB POS</span></div><div class="kasir-total"><small>TOTAL PEMBAYARAN</small><strong>Rp —</strong></div><div class="kasir-lines"><i></i><i></i><i></i></div><div class="kasir-pay"><span>QRIS</span><span>NON-QRIS</span></div><small class="kasir-sync">GOOGLE SHEETS SYNC</small></div></div>
-<div class="project-info"><div class="project-meta"><span>BUSINESS SYSTEMS</span><span>06 / 06</span></div><h3 data-i18n="project6_title">KasirKu — Sistem Kasir Terintegrasi</h3><p data-i18n="project6_desc">Proyek pengembangan sistem kasir berbasis web yang dirancang dapat digunakan melalui HP dan laptop, terhubung ke Google Sheets, serta mendukung pencatatan metode pembayaran termasuk QRIS dan non-QRIS.</p><div class="project-tags"><span>Web App</span><span>Google Sheets</span><span>Payment Recording</span></div><span class="project-status" data-i18n="project6_status">PROYEK PENGEMBANGAN</span></div>
-</article>
-</div>
-<p class="projects-note" data-i18n-html="projects_note"><strong>Catatan transparansi:</strong> kartu proyek menjelaskan ruang lingkup pengalaman, bukan klaim hasil penjualan tertentu. Angka GMV, omzet, biaya iklan, data pelanggan, dan dashboard toko tidak ditampilkan. Tambahkan bukti dashboard hanya setelah mendapat izin dan menyamarkan data internal.</p>
-</div>
-</section>
-<section class="section section-dark" id="experience">
-<div class="container two-column experience-layout">
-<div><p class="eyebrow" data-i18n="experience_eyebrow">04 / PERJALANAN &amp; PENGALAMAN</p><h2 data-i18n-html="experience_title">Dari pengasuhan, menuju <span class="gradient-text">dunia bisnis digital.</span></h2><p class="experience-intro" data-i18n="experience_intro">Perjalanan ini memperlihatkan perpindahan pengalaman dari lingkungan pesantren ke agency, affiliate, pengelolaan toko, dan pengembangan sistem bisnis.</p></div>
-<div class="timeline-list">
-<article class="timeline-item"><span class="timeline-point"></span><div class="timeline-meta" data-i18n="timeline1_meta">PENGALAMAN KEPESANTRENAN · ± 9 TAHUN</div><h3 data-i18n="timeline1_title">Pondok Pesantren Al-Bahjah</h3><p data-i18n="timeline1_desc">Menjalani kehidupan mondok kurang lebih sembilan tahun dan pernah mengemban amanah sebagai murāqib atau pengasuh di Pondok Pesantren Al-Bahjah, yang diasuh oleh Abuya Yahya.</p><span class="timeline-hint" data-i18n="timeline1_hint">Pengalaman pembinaan dan pendampingan santri</span></article>
-<article class="timeline-item"><span class="timeline-point"></span><div class="timeline-meta" data-i18n="timeline2_meta">2025 · AGENCY &amp; AFFILIATE</div><h3 data-i18n="timeline2_title">Masjid Affiliate Alkahfi — Bunut, Bandung</h3><p data-i18n="timeline2_desc">Menjadi manager agency serta menjalankan peran sebagai TikTok Affiliate Partner (TAP). Pengalaman kolaborasi mencakup brand seperti ALKAHF, ALAMME, dan perusahaan lainnya.</p><span class="timeline-hint" data-i18n="timeline2_hint">Agency management · Affiliate partnership · Brand collaboration</span></article>
-<article class="timeline-item"><span class="timeline-point"></span><div class="timeline-meta" data-i18n="timeline3_meta">2025 · TIKTOK SHOP</div><h3 data-i18n="timeline3_title">A&amp;Y FashionStyle &amp; Korina Style</h3><p data-i18n="timeline3_desc">Membantu pengelolaan toko dan aktivitas e-commerce, termasuk pemantauan live dan analitik toko.</p><span class="timeline-hint" data-i18n="timeline3_hint">Store operations · Live commerce · Analytics</span></article>
-<article class="timeline-item"><span class="timeline-point"></span><div class="timeline-meta" data-i18n="timeline4_meta">2026 · TIKTOK SHOP</div><h3 data-i18n="timeline4_title">Pengelolaan Lima Toko</h3><p data-i18n="timeline4_desc">Benih Baik Group, Benih Fast Group, Petani Kota Store, Kelapa Gading 3, dan Kelapa Gading 2.</p><span class="timeline-hint" data-i18n="timeline4_hint">Marketplace operations · TikTok Ads · Product listing · Content</span></article>
-<article class="timeline-item"><span class="timeline-point"></span><div class="timeline-meta" data-i18n="timeline5_meta">2026 · PENGEMBANGAN PRODUK</div><h3 data-i18n="timeline5_title">KasirKu</h3><p data-i18n="timeline5_desc">Mengembangkan sistem kasir web untuk HP dan laptop dengan integrasi pencatatan data ke Google Sheets dan dukungan pencatatan pembayaran.</p><span class="timeline-hint" data-i18n="timeline5_hint">Web workflow · Google Sheets · Payment recording</span></article>
-<article class="timeline-item"><span class="timeline-point"></span><div class="timeline-meta" data-i18n="timeline6_meta">PENDIDIKAN</div><h3 data-i18n="timeline6_title">Universitas Insan Cita Indonesia</h3><p data-i18n="timeline6_desc">Mahasiswa UICI Batch 11, Program Studi Bisnis Digital.</p><span class="timeline-hint" data-i18n="timeline6_hint">Pendidikan tinggi</span></article>
-</div>
-</div>
-</section>
-<section class="section section-light evidence-section" id="evidence">
-<div class="container">
-<div class="section-heading evidence-heading"><div><p class="eyebrow eyebrow-dark" data-i18n="analytics_eyebrow">05 / ANALITIK &amp; PENCAPAIAN</p><h2 data-i18n-html="analytics_title">Kinerja dirangkum dalam <span class="text-accent">angka dan grafik.</span></h2></div><p class="heading-side heading-side-light" data-i18n="analytics_intro">Ringkasan metrik dari dokumentasi Seller Center dan TikTok LIVE yang saya bagikan. Dashboard mentah, logo toko, dan ID akun tidak ditampilkan.</p></div>
-<div class="analytics-grid">
-<article class="analytics-card">
-  <div class="analytics-card-head"><div><span class="analytics-kicker">SELLER CENTER · A&amp;Y FASHIONSTYLE</span><h3 data-i18n="analytics_ay_title">Ringkasan performa toko</h3><p data-i18n="analytics_ay_period">13 April – 12 Mei 2026</p></div><span class="analytics-index">01</span></div>
-  <div class="analytics-kpis">
-    <div class="analytics-kpi analytics-kpi-primary"><span>GMV</span><strong>Rp61.225.239</strong><small data-i18n="analytics_gmv_note">Nilai yang tampil pada dashboard</small></div>
-    <div class="analytics-kpi"><span data-i18n="analytics_sold">Produk terjual</span><strong>431</strong></div>
-    <div class="analytics-kpi"><span data-i18n="analytics_sku_orders">Pesanan SKU</span><strong>428</strong></div>
-    <div class="analytics-kpi"><span data-i18n="analytics_orders">Pesanan</span><strong>412</strong></div>
-  </div>
-  <div class="analytics-chart-block"><div class="analytics-chart-title" data-i18n="analytics_ay_chart">Volume aktivitas toko</div>
-    <div class="hbar-row"><span data-i18n="analytics_sold">Produk terjual</span><div class="hbar-track"><i style="width:100%"></i></div><b>431</b></div>
-    <div class="hbar-row"><span data-i18n="analytics_sku_orders">Pesanan SKU</span><div class="hbar-track"><i style="width:99.3%"></i></div><b>428</b></div>
-    <div class="hbar-row"><span data-i18n="analytics_orders">Pesanan</span><div class="hbar-track"><i style="width:95.6%"></i></div><b>412</b></div>
-  </div>
-</article>
-<article class="analytics-card">
-  <div class="analytics-card-head"><div><span class="analytics-kicker">SELLER CENTER · BENIH BAIK GROUP</span><h3 data-i18n="analytics_benih_title">Ringkasan performa toko</h3><p data-i18n="analytics_benih_period">8 Oktober – 6 November 2026</p></div><span class="analytics-index">02</span></div>
-  <div class="analytics-kpis">
-    <div class="analytics-kpi analytics-kpi-primary"><span>GMV</span><strong>±Rp2 juta</strong><small data-i18n="analytics_rounded_note">Angka dibulatkan seperti tampilan dashboard</small></div>
-    <div class="analytics-kpi"><span data-i18n="analytics_sold">Produk terjual</span><strong>82</strong></div>
-    <div class="analytics-kpi"><span data-i18n="analytics_sku_orders">Pesanan SKU</span><strong>39</strong></div>
-    <div class="analytics-kpi"><span data-i18n="analytics_orders">Pesanan</span><strong>35</strong></div>
-  </div>
-  <div class="analytics-chart-block"><div class="analytics-chart-title" data-i18n="analytics_benih_chart">Volume aktivitas toko</div>
-    <div class="hbar-row"><span data-i18n="analytics_sold">Produk terjual</span><div class="hbar-track"><i style="width:100%"></i></div><b>82</b></div>
-    <div class="hbar-row"><span data-i18n="analytics_sku_orders">Pesanan SKU</span><div class="hbar-track"><i style="width:47.6%"></i></div><b>39</b></div>
-    <div class="hbar-row"><span data-i18n="analytics_orders">Pesanan</span><div class="hbar-track"><i style="width:42.7%"></i></div><b>35</b></div>
-  </div>
-</article>
-<article class="analytics-card analytics-card-wide">
-  <div class="analytics-card-head"><div><span class="analytics-kicker">TIKTOK LIVE · DOKUMENTASI METRIK</span><h3 data-i18n="analytics_live_title">GMV pada tiga snapshot LIVE</h3><p data-i18n="analytics_live_period">Nilai yang terlihat pada tiga dokumentasi dashboard</p></div><span class="analytics-index">03</span></div>
-  <div class="live-chart" role="img" aria-label="Grafik nilai GMV yang terlihat pada tiga dokumentasi TikTok LIVE: Rp149.400, Rp761.318, dan Rp3.394.145.">
-    <div class="live-chart-row"><div class="live-chart-label"><span data-i18n="analytics_snapshot1">Snapshot 01</span><small data-i18n="analytics_live_products">Produk terjual di LIVE: 1</small></div><div class="live-bar-track"><i style="width:4.4%"></i></div><strong>Rp149.400</strong></div>
-    <div class="live-chart-row"><div class="live-chart-label"><span data-i18n="analytics_snapshot2">Snapshot 02</span><small data-i18n="analytics_live_products5">Produk terjual di LIVE: 5</small></div><div class="live-bar-track"><i style="width:22.4%"></i></div><strong>Rp761.318</strong></div>
-    <div class="live-chart-row"><div class="live-chart-label"><span data-i18n="analytics_snapshot3">Snapshot 03</span><small data-i18n="analytics_live_products21">Produk terjual di LIVE: 21</small></div><div class="live-bar-track"><i style="width:100%"></i></div><strong>Rp3.394.145</strong></div>
-  </div>
-  <p class="analytics-footnote" data-i18n="analytics_live_note">Catatan: angka ini adalah snapshot yang terlihat pada dokumentasi, bukan total bulanan. Snapshot dapat berasal dari waktu atau sesi yang berbeda dan tidak dimaksudkan sebagai perbandingan performa yang setara.</p>
-</article>
-</div>
-<div class="analytics-disclaimer" data-i18n="analytics_disclaimer">Sumber: tangkapan layar Seller Center dan TikTok LIVE yang diberikan Derian. Periode dan nilai ditulis mengikuti tampilan yang terbaca. Grafik ini merupakan ringkasan visual, bukan audit independen atau jaminan hasil yang sama pada periode lain.</div>
-<div class="event-proof-row">
-  <figure class="event-proof-photo"><a href="assets/event_tiktok_shop_mcn.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/event_tiktok_shop_mcn.webp" alt="Dokumentasi event Top Creator dan MCN Offline Matchmaking TikTok Shop, 15 Januari 2026." data-alt-id="Dokumentasi event Top Creator dan MCN Offline Matchmaking TikTok Shop, 15 Januari 2026." data-alt-en="Event documentation from TikTok Shop Top Creator &amp; MCN Offline Matchmaking, January 15, 2026." /></a></figure>
-  <div class="event-proof-copy"><p class="eyebrow eyebrow-dark" data-i18n="event_eyebrow">DOKUMENTASI KEGIATAN</p><h3 data-i18n="event_title">Top Creator &amp; MCN Offline Matchmaking Event</h3><p data-i18n="event_desc">Dokumentasi kegiatan TikTok Shop by Tokopedia · 15 Januari 2026 · Midaz Golf Senayan, Jakarta.</p></div>
-</div>
-</div>
-</section>
-<section class="section contact-section" id="contact">
-<div class="container contact-box"><div><p class="eyebrow" data-i18n="contact_eyebrow">06 / KONTAK</p><h2 data-i18n-html="contact_title">Mari terhubung dan <span class="gradient-text">berkolaborasi.</span></h2><p class="contact-lead" data-i18n="contact_lead">Terbuka untuk peluang kerja, kolaborasi affiliate, pengelolaan marketplace, dan proyek digital yang relevan.</p></div>
-<div class="contact-actions">
-  <a class="button button-primary" href="https://wa.me/6285283966520" target="_blank" rel="noopener noreferrer" data-i18n="contact_whatsapp_button">Hubungi via WhatsApp ↗</a>
-  <a class="button button-ghost" href="mailto:derian2467@gmail.com" data-i18n="contact_email_button">Kirim email ↗</a>
-  <div class="contact-detail"><span data-i18n="contact_phone_label">Nomor telepon / WhatsApp</span><a href="tel:+6285283966520">0852 8396 6520</a></div>
-  <div class="contact-detail"><span data-i18n="contact_email_label">Email</span><a href="mailto:derian2467@gmail.com">derian2467@gmail.com</a></div>
-  <p class="contact-placeholder" data-i18n="contact_privacy_note">Kontak ini ditampilkan atas permintaan pemilik portofolio.</p>
-</div></div>
-</section>
-</main>
-<footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">D.</span><span>DERIAN ALFRIANSYAH<span class="brand-muted"> / PORTFOLIO</span></span></a><p data-i18n="footer_note">Dibuat dengan HTML, CSS, dan JavaScript.</p><span>© <span id="year"></span> Derian Alfriansyah</span></div></footer>
+
+  <dialog class="modal" id="product-modal"><form method="dialog" id="product-form"><div class="modal-head"><div><p class="eyebrow">ACTIVE PRICE SETTINGS</p><h2 id="product-modal-title">Atur harga produk</h2></div><button class="icon-close" type="button" data-close="product-modal" aria-label="Tutup">×</button></div><p class="modal-product-name" id="modal-product-name"></p><input type="hidden" id="modal-product-id">
+    <div class="form-grid"><label>HPP (Rp)<input id="edit-cost" type="number" min="0" step="1"></label><label>Harga online (Rp)<input id="edit-online" type="number" min="0" step="1"></label><label>Offline · 1 pcs (Rp)<input id="edit-offline1" type="number" min="0" step="1"></label><label>Offline · 10 pcs (Rp)<input id="edit-offline10" type="number" min="0" step="1"></label><label>Offline · 20+ pcs (Rp)<input id="edit-offline20" type="number" min="0" step="1"></label><label>Tambah stok (pcs)<input id="restock-qty" type="number" min="0" step="1" value="0"></label></div>
+    <p class="modal-hint">Kosongkan kolom harga bila memang belum tersedia. Nilai 0 dianggap harga aktif. Penambahan stok akan dijumlahkan ke stok saat ini.</p><div class="modal-actions"><button class="outline-button" id="reset-source-price" type="button">Kembalikan harga sumber</button><span class="spacer"></span><button class="outline-button" type="button" data-close="product-modal">Batal</button><button class="primary-button" type="submit">Simpan perubahan</button></div><p class="modal-feedback" id="product-feedback" role="status"></p>
+  </form></dialog>
+
+  <dialog class="modal receipt-modal" id="receipt-modal"><div class="receipt-paper"><div class="receipt-brand"><div class="receipt-logo">K</div><h2 id="receipt-shop-name">KasirKu Demo</h2><p>STRUK TRANSAKSI · DATA SIMULASI</p></div><div class="receipt-meta" id="receipt-meta"></div><div class="receipt-items" id="receipt-items"></div><div class="receipt-summary" id="receipt-summary"></div><p class="receipt-message">Terima kasih telah mencoba KasirKu Demo.</p><p class="receipt-warning">Bukan bukti pembayaran bank atau transaksi bisnis sungguhan.</p></div><div class="receipt-actions"><label class="phone-field">WhatsApp pelanggan<input id="receipt-phone" type="tel" placeholder="08xxxxxxxxxx"></label><button class="primary-button" id="send-receipt-wa" type="button">Kirim via WhatsApp ↗</button><button class="outline-button" id="print-receipt" type="button">Cetak struk</button><button class="outline-button" type="button" data-close="receipt-modal">Tutup</button></div></dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
 </body>
 </html>

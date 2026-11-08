@@ -132,3 +132,11 @@
 @media(max-width:900px){.tools-heading{gap:26px}.tools-intro{max-width:300px}}
 @media(max-width:700px){.tools-section{padding:54px 0 58px}.tools-heading{display:block;margin-bottom:20px}.tools-heading h2{font-size:29px}.tools-intro{margin-top:13px;max-width:500px}.tool-card{width:158px;flex-basis:158px;min-height:78px;padding:11px 12px;grid-template-columns:38px 1fr;column-gap:10px}.tool-mark{width:38px;height:38px}.tools-track{animation-duration:44s}}
 @media(prefers-reduced-motion:reduce){.tools-track,.tool-mark{animation:none!important}.tools-marquee{overflow-x:auto;mask-image:none}.tools-track{transform:none!important}}
+
+
+/* Version 8: prominent KasirKu demo action on its portfolio card */
+.project-demo-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin:0 0 13px;padding:10px 13px;border-radius:999px;background:#137d70;color:#fff;font:800 10px var(--font-display);letter-spacing:.02em;transition:transform .2s,background .2s,box-shadow .2s;box-shadow:0 7px 16px rgba(19,125,112,.15)}
+.project-demo-link:hover{transform:translateY(-2px);background:#0e665d;box-shadow:0 10px 22px rgba(19,125,112,.22)}
+.project-demo-link:focus-visible{outline:3px solid #8f9cff;outline-offset:3px}
+
+.demo-disclaimer{display:block;margin:-5px 0 13px;color:#89949f;font-size:9px;line-height:1.6}

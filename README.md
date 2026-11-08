@@ -1,39 +1,33 @@
-# Portofolio Derian Alfriansyah — Versi 5
+# KasirKu — Demo Portofolio Derian Alfriansyah
 
-Website statis ringan menggunakan HTML, CSS, dan JavaScript.
+Demo web POS ringan yang **mengikuti alur aplikasi KasirKu asli**, tetapi berjalan memakai data contoh di browser agar aman dipamerkan di website portofolio.
 
-## Isi
-- `index.html` — struktur konten website
-- `style.css` — tampilan responsif dan grafik analitik
-- `script.js` — navigasi dan pilihan Bahasa Indonesia/English
-- `assets/derian-profile.webp` — foto profil
-- `assets/event_tiktok_shop_mcn.webp` — dokumentasi event
+## Alur yang direpresentasikan
 
-## Pembaruan versi 5
-- Ringkasan analitik ditampilkan dalam kartu metrik dan grafik, bukan screenshot dashboard mentah.
-- Grafik menggunakan angka yang terbaca dari screenshot yang diberikan Derian.
-- Logo toko, ID akun, dan tangkapan layar dashboard mentah tidak disertakan dalam paket ini.
-- Kontak publik: WhatsApp/telepon 0852 8396 6520 dan email derian2467@gmail.com.
-- Tetap mendukung Bahasa Indonesia dan English.
+1. Katalog produk dari tiga sumber konsep HPP: harga online Benih Baik, harga offline Benih Baik, dan katalog rempah.
+2. SKU, nama produk, HPP, harga online, harga offline 1 pcs, 10 pcs, dan 20+ pcs.
+3. Sinkronisasi katalog yang meniru perilaku aplikasi asli: harga/HPP manual yang sudah diisi dipertahankan; sinkronisasi mengisi nilai yang kosong. Produk baru diberi stok awal 0.
+4. Perubahan HPP/harga aktif dari aplikasi, pengembalian harga ke nilai sumber, serta penambahan stok.
+5. Kasir dengan pilihan mode harga, pencarian produk, keranjang, edit harga satuan pada transaksi, validasi stok, pembayaran Tunai atau pencatatan QRIS, dan perhitungan kembalian.
+6. Checkout mengurangi stok, membuat ID transaksi, menghitung laba kotor dari harga jual dikurangi HPP, dan mencatat metode pembayaran.
+7. Riwayat transaksi, ringkasan omzet/laba, analisis periode hari ini/7 hari/30 hari/tanggal tertentu, grafik, dan 5 produk terlaris.
+8. Struk dapat dicetak atau dibagikan ke WhatsApp pelanggan melalui tautan berbagi.
 
-## Data analitik yang ditampilkan
-- A&Y FashionStyle: periode 13 April–12 Mei 2026; GMV Rp61.225.239; produk terjual 431; pesanan SKU 428; pesanan 412.
-- Benih Baik Group: periode 8 Oktober–6 November 2026; dashboard menampilkan GMV dibulatkan Rp2 jt; produk terjual 82; pesanan SKU 39; pesanan 35.
-- TikTok LIVE: tiga snapshot dokumentasi menunjukkan GMV Rp149.400, Rp761.318, dan Rp3.394.145. Angka merupakan snapshot dan tidak dianggap total bulanan atau perbandingan antar-sesi yang setara.
+## Batasan demo publik
 
-Pastikan pemilik toko mengizinkan penggunaan nama toko dan data ringkasan sebelum website dipublikasikan.
+- Seluruh produk, SKU, HPP, harga, stok, dan transaksi awal adalah **data contoh yang dibuat untuk demonstrasi**. Bukan data aktual dari toko atau spreadsheet Derian.
+- Penyimpanan menggunakan `localStorage` browser. Tidak sinkron antarperangkat dan tidak terhubung ke Google Sheets.
+- Tombol sinkronisasi menjalankan simulasi aturan sinkronisasi katalog. Tombol tidak mengakses spreadsheet.
+- QRIS adalah pencatatan metode pembayaran simulasi. Tidak menghasilkan QR dinamis, tidak terhubung ke bank/payment gateway, dan tidak memverifikasi pembayaran.
+- Struk dan WhatsApp berisi keterangan demo; bukan bukti pembayaran sungguhan.
+- Jangan memasukkan transaksi atau data pelanggan nyata ke demo publik.
 
-## Menjalankan secara lokal
-Buka `index.html` melalui browser. Tidak memerlukan Node.js, framework, atau server lokal.
+## Hubungan dengan proyek asli
 
-## GitHub Pages
-Upload semua isi folder ini ke root repository GitHub Pages, lalu aktifkan Pages dari branch `main` dan folder `/ (root)`.
+Kode KasirKu asli menggunakan Google Apps Script sebagai backend dan Google Sheets sebagai sumber katalog HPP, penyimpanan stok, dan pencatatan transaksi. Demo ini mempertahankan alur/konsep utama tersebut untuk presentasi portofolio, tanpa mengekspos spreadsheet, ID, atau data operasional asli.
 
+## Menjalankan dan menerbitkan
 
-## Contact buttons
-- The main “Hubungi saya / Contact me” navigation button and hero WhatsApp button open WhatsApp directly.
-- The “Email saya / Email me” button opens the visitor's default email application using `mailto:`.
-- Contact links use the phone and email supplied by the portfolio owner.
-
-
-Versi 7 menambahkan baris animasi CSS ringan untuk TikTok Shop, Tokopedia, Shopee, KasirKu, Canva, ChatGPT, dan CapCut. Animasi menghormati pengaturan reduced motion perangkat.
+- Lokal: buka `index.html` di browser modern.
+- GitHub Pages: unggah isi folder `kasirku/` ke folder `kasirku/` di root repository portofolio. URL demo menjadi `https://USERNAME.github.io/kasirku/`.
+- PWA: setelah dibuka dari HTTPS, Chrome Android dapat menawarkan menu Install app / Add to Home screen. Ini aplikasi web yang dipasang ke layar utama, bukan file APK native.

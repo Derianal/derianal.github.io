@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102536">
+  <meta name="description" content="KasirKu — demo portofolio sistem kasir Derian Alfriansyah. Simulasi katalog HPP, harga online dan offline bertingkat, stok, transaksi, riwayat, dan analisis penjualan.">
+  <title>KasirKu — Portfolio Demo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/kasirku-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#kasir" aria-label="KasirKu beranda">
+        <span class="brand-icon">K</span>
+        <span class="brand-copy"><b>KasirKu</b><small>POINT OF SALE SYSTEM</small></span>
+      </a>
+      <div class="workspace-card">
+        <span class="workspace-avatar">KD</span>
+        <span class="workspace-copy"><b>KasirKu Demo</b><small>Data contoh / sandbox</small></span>
+        <span class="workspace-chevron">⌄</span>
+      </div>
+      <nav class="side-nav" aria-label="Navigasi aplikasi">
+        <button class="nav-item active" type="button" data-view="kasir"><span class="nav-symbol">▦</span>Kasir</button>
+        <button class="nav-item" type="button" data-view="stok"><span class="nav-symbol">▤</span>Stok &amp; harga</button>
+        <button class="nav-item" type="button" data-view="riwayat"><span class="nav-symbol">↻</span>Riwayat transaksi</button>
+        <button class="nav-item" type="button" data-view="analisis"><span class="nav-symbol">⌁</span>Analisis penjualan</button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note"><b><span class="demo-dot"></span> MODE DEMO</b><p>Seluruh data disimpan di browser ini. Tidak mengakses spreadsheet atau data toko asli.</p></div>
+      <a class="back-link" href="../" target="_self">← Kembali ke portofolio</a>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Buka navigasi">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-sep">/</span><b id="crumb-title">Kasir</b></div>
+        <div class="topbar-right"><span class="demo-pill"><i></i> DATA SIMULASI</span><span class="date-label" id="today-label"></span><span class="user-avatar" title="Demo Derian">D</span></div>
+      </header>
+
+      <div class="demo-banner" role="note">
+        <span class="banner-icon">ⓘ</span>
+        <div><b>Ini adalah demo portofolio, bukan sistem produksi.</b><span>Produk, SKU, HPP, harga, stok, dan transaksi yang terlihat adalah data contoh. Transaksi tidak mengubah Google Sheets dan QRIS tidak memproses pembayaran.</span></div>
+        <button type="button" id="dismiss-banner" aria-label="Tutup pemberitahuan">×</button>
+      </div>
+
+      <section class="view active" id="view-kasir">
+        <div class="page-heading"><div><p class="eyebrow">POINT OF SALE / 01</p><h1>Kasir <span>penjualan</span></h1><p class="subheading">Pilih mode harga, masukkan produk ke keranjang, lalu simulasikan transaksi.</p></div><div class="shift-tag"><span class="live-dot"></span> Sesi demo aktif</div></div>
+        <div class="summary-grid">
+          <article class="summary-card"><span class="summary-icon teal">Rp</span><div><small>Omzet hari ini</small><strong id="today-revenue">Rp0</strong><em>Transaksi contoh &amp; simulasi</em></div></article>
+          <article class="summary-card"><span class="summary-icon blue">▤</span><div><small>Transaksi hari ini</small><strong id="today-count">0</strong><em>Tersimpan di browser ini</em></div></article>
+          <article class="summary-card"><span class="summary-icon amber">▣</span><div><small>Produk katalog</small><strong id="product-count">0</strong><em>Sinkronisasi sumber demo</em></div></article>
+          <article class="summary-card"><span class="summary-icon violet">↗</span><div><small>Laba kotor hari ini</small><strong id="today-profit">Rp0</strong><em>Harga jual dikurangi HPP contoh</em></div></article>
+        </div>
+
+        <div class="pos-layout">
+          <section class="panel catalog-panel">
+            <div class="panel-heading"><div><p class="eyebrow">CATALOG</p><h2>Pilih barang</h2><p>Harga mengikuti mode yang dipilih.</p></div><span class="count-pill" id="catalog-count">0 produk</span></div>
+            <div class="catalog-controls">
+              <label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Cari nama produk atau SKU…" autocomplete="off"><kbd>Ctrl K</kbd></label>
+              <label class="select-field"><span>Mode harga</span><select id="price-mode"><option value="online">Harga online</option><option value="offline1">Offline · 1 pcs</option><option value="offline10">Offline · 10 pcs</option><option value="offline20">Offline · 20+ pcs</option></select></label>
+            </div>
+            <div class="source-hint"><span class="hint-dot"></span> Sumber simulasi: HPP Online/Offline Benih Baik &amp; HPP Rempah · angka bukan harga aktual</div>
+            <div class="product-grid" id="product-grid" aria-live="polite"></div>
+            <div class="empty-state hidden" id="product-empty">Produk tidak ditemukan atau harga untuk mode ini belum tersedia.</div>
+          </section>
+
+          <aside class="panel order-panel">
+            <div class="order-head"><div><p class="eyebrow">CURRENT ORDER</p><h2>Keranjang transaksi</h2></div><button class="text-button" id="clear-cart" type="button">Kosongkan</button></div>
+            <div class="order-meta"><span id="order-number">#KSR-DEMO</span><span class="pending-tag"><i></i> Belum dibayar</span></div>
+            <div class="field"><label for="customer-name">Nama pelanggan <span>Opsional</span></label><input class="text-input" id="customer-name" placeholder="Pelanggan umum"></div>
+            <div class="cart-list" id="cart-list"><div class="cart-empty"><span>＋</span><b>Keranjang masih kosong</b><small>Pilih produk untuk memulai transaksi.</small></div></div>
+            <div class="order-calculation">
+              <div class="calc-row"><span>Total item</span><b id="total-qty">0 pcs</b></div>
+              <div class="calc-row total-row"><span>Total pembayaran</span><strong id="order-total">Rp0</strong></div>
+            </div>
+            <div class="payment-block">
+              <label class="field-label" for="payment-method">Metode pembayaran</label>
+              <select class="text-input" id="payment-method"><option value="Tunai">Tunai</option><option value="QRIS">QRIS (pencatatan demo)</option></select>
+              <div id="cash-fields"><label class="field-label" for="cash-received">Uang diterima (Rp)</label><input class="text-input" id="cash-received" type="number" min="0" step="1" inputmode="numeric" placeholder="Masukkan nominal"><div class="change-row"><span>Kembalian</span><b id="change-due">Rp0</b></div></div>
+              <div class="payment-note" id="payment-note">Tunai: masukkan nominal yang diterima untuk menghitung kembalian.</div>
+            </div>
+            <button class="checkout-button" id="checkout-button" type="button" disabled><span>Selesaikan transaksi</span><b id="checkout-total">Rp0 →</b></button>
+            <p class="order-footnote">Simulasi checkout. Tidak ada uang atau pembayaran sungguhan yang diproses.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-stok">
+        <div class="page-heading"><div><p class="eyebrow">INVENTORY &amp; ACTIVE PRICES / 02</p><h1>Stok <span>&amp; harga</span></h1><p class="subheading">Kelola stok dan nilai HPP/harga aktif seperti alur di KasirKu asli.</p></div><button class="primary-button" id="sync-catalog" type="button">↻ Simulasikan sinkronisasi</button></div>
+        <div class="sync-explainer"><div class="sync-icon">↕</div><div><b>Alur sinkronisasi katalog HPP</b><p>Demo meniru aturan aplikasi asli: nilai harga yang sudah diisi secara manual dipertahankan; sinkronisasi hanya mengisi nilai yang masih kosong. Spreadsheet asli tidak diakses.</p></div></div>
+        <div class="panel table-panel"><div class="panel-heading"><div><h2>Daftar stok &amp; harga aktif</h2><p id="stock-count-label">0 produk terdaftar.</p></div><input class="text-input table-search" id="stock-search" placeholder="Cari nama produk / SKU…"></div>
+          <div class="table-scroll"><table><thead><tr><th>Produk / SKU</th><th>Sumber</th><th>HPP</th><th>Harga online</th><th>Offline 1 pcs</th><th>Offline 10 pcs</th><th>Offline 20+ pcs</th><th>Stok</th><th>Aksi</th></tr></thead><tbody id="stock-body"></tbody></table></div>
+          <div class="table-note">Edit HPP dan harga aktif di aplikasi demo ini. Untuk menambah stok, gunakan tombol <b>Atur</b>. Perubahan hanya tersimpan pada browser yang digunakan.</div>
+        </div>
+      </section>
+
+      <section class="view" id="view-riwayat">
+        <div class="page-heading"><div><p class="eyebrow">TRANSACTION RECORDS / 03</p><h1>Riwayat <span>transaksi</span></h1><p class="subheading">Rincian transaksi contoh dan simulasi yang tersimpan di browser ini.</p></div><span class="count-pill" id="history-count">0 transaksi</span></div>
+        <div class="summary-grid compact-summary"><article class="summary-card"><span class="summary-icon teal">Rp</span><div><small>Total omzet</small><strong id="history-revenue">Rp0</strong><em>Seluruh transaksi demo</em></div></article><article class="summary-card"><span class="summary-icon blue">▤</span><div><small>Jumlah transaksi</small><strong id="history-orders">0</strong><em>Catatan tersimpan lokal</em></div></article><article class="summary-card"><span class="summary-icon violet">↗</span><div><small>Total laba kotor</small><strong id="history-profit">Rp0</strong><em>Berdasarkan HPP contoh</em></div></article></div>
+        <div class="panel table-panel"><div class="panel-heading"><div><h2>Semua transaksi</h2><p>Buka kembali detail transaksi dan struk demo.</p></div><input class="text-input table-search" id="history-search" placeholder="Cari ID / pelanggan…"></div><div class="table-scroll"><table><thead><tr><th>ID transaksi</th><th>Tanggal &amp; waktu</th><th>Pelanggan</th><th>Metode</th><th>Total</th><th>Laba kotor</th><th></th></tr></thead><tbody id="history-body"></tbody></table></div><div class="empty-state hidden" id="history-empty">Belum ada transaksi. Buat transaksi pertama dari menu Kasir.</div></div>
+      </section>
+
+      <section class="view" id="view-analisis">
+        <div class="page-heading"><div><p class="eyebrow">SALES ANALYTICS / 04</p><h1>Analisis <span>penjualan</span></h1><p class="subheading">Ringkasan omzet, laba kotor, transaksi, produk terjual, dan produk terlaris.</p></div></div>
+        <div class="panel analytics-filter"><div class="filter-fields"><label class="select-field"><span>Rentang analisis</span><select id="analytics-period"><option value="hari_ini">Hari ini</option><option value="7_hari" selected>7 hari terakhir</option><option value="30_hari">30 hari terakhir</option><option value="tanggal">Pilih tanggal</option></select></label><label class="select-field hidden" id="analytics-date-wrap"><span>Tanggal</span><input class="text-input" type="date" id="analytics-date"></label></div><span class="period-label" id="analytics-range">Periode analisis</span></div>
+        <div class="analytics-kpis"><article class="metric-card"><span>Total omzet</span><strong id="metric-revenue">Rp0</strong><small id="metric-revenue-compare">Dibanding periode sebelumnya</small></article><article class="metric-card"><span>Laba kotor</span><strong id="metric-profit">Rp0</strong><small id="metric-profit-compare">Dibanding periode sebelumnya</small></article><article class="metric-card"><span>Jumlah transaksi</span><strong id="metric-orders">0</strong><small id="metric-orders-compare">Dibanding periode sebelumnya</small></article><article class="metric-card"><span>Produk terjual</span><strong id="metric-qty">0</strong><small>Jumlah kuantitas barang</small></article><article class="metric-card"><span>Rata-rata transaksi</span><strong id="metric-average">Rp0</strong><small>Omzet ÷ jumlah transaksi</small></article></div>
+        <div class="analytics-layout"><section class="panel chart-panel"><div class="panel-heading"><div><h2>Grafik penjualan</h2><p>Batang menunjukkan omzet; garis menunjukkan laba kotor.</p></div><span class="chart-legend"><i class="legend-revenue"></i> Omzet <i class="legend-profit"></i> Laba</span></div><div class="chart-wrap"><canvas id="sales-chart" width="900" height="320" role="img" aria-label="Grafik omzet dan laba kotor"></canvas></div><div class="empty-chart hidden" id="chart-empty">Belum ada transaksi pada periode ini.</div></section>
+          <section class="panel top-products-panel"><div class="panel-heading"><div><h2>5 produk terlaris</h2><p>Berdasarkan kuantitas terjual.</p></div></div><div id="top-products"></div><div class="empty-chart hidden" id="top-empty">Belum ada produk terjual pada periode ini.</div></section></div>
+        <p class="analytics-note">Perhitungan demo mengikuti konsep KasirKu: omzet adalah subtotal penjualan, laba kotor dihitung dari (harga jual − HPP) × jumlah, dan perbandingan menggunakan periode sebelumnya yang setara.</p>
+      </section>
+
+      <footer class="app-footer"><span>KasirKu · Portfolio project by <b>Derian Alfriansyah</b></span><button type="button" id="reset-demo" class="reset-link">Reset data demo</button></footer>
+    </main>
+  </div>
+
+  <dialog class="modal" id="product-modal"><form method="dialog" id="product-form"><div class="modal-head"><div><p class="eyebrow">ACTIVE PRICE SETTINGS</p><h2 id="product-modal-title">Atur harga produk</h2></div><button class="icon-close" type="button" data-close="product-modal" aria-label="Tutup">×</button></div><p class="modal-product-name" id="modal-product-name"></p><input type="hidden" id="modal-product-id">
+    <div class="form-grid"><label>HPP (Rp)<input id="edit-cost" type="number" min="0" step="1"></label><label>Harga online (Rp)<input id="edit-online" type="number" min="0" step="1"></label><label>Offline · 1 pcs (Rp)<input id="edit-offline1" type="number" min="0" step="1"></label><label>Offline · 10 pcs (Rp)<input id="edit-offline10" type="number" min="0" step="1"></label><label>Offline · 20+ pcs (Rp)<input id="edit-offline20" type="number" min="0" step="1"></label><label>Tambah stok (pcs)<input id="restock-qty" type="number" min="0" step="1" value="0"></label></div>
+    <p class="modal-hint">Kosongkan kolom harga bila memang belum tersedia. Nilai 0 dianggap harga aktif. Penambahan stok akan dijumlahkan ke stok saat ini.</p><div class="modal-actions"><button class="outline-button" id="reset-source-price" type="button">Kembalikan harga sumber</button><span class="spacer"></span><button class="outline-button" type="button" data-close="product-modal">Batal</button><button class="primary-button" type="submit">Simpan perubahan</button></div><p class="modal-feedback" id="product-feedback" role="status"></p>
+  </form></dialog>
+
+  <dialog class="modal receipt-modal" id="receipt-modal"><div class="receipt-paper"><div class="receipt-brand"><div class="receipt-logo">K</div><h2 id="receipt-shop-name">KasirKu Demo</h2><p>STRUK TRANSAKSI · DATA SIMULASI</p></div><div class="receipt-meta" id="receipt-meta"></div><div class="receipt-items" id="receipt-items"></div><div class="receipt-summary" id="receipt-summary"></div><p class="receipt-message">Terima kasih telah mencoba KasirKu Demo.</p><p class="receipt-warning">Bukan bukti pembayaran bank atau transaksi bisnis sungguhan.</p></div><div class="receipt-actions"><label class="phone-field">WhatsApp pelanggan<input id="receipt-phone" type="tel" placeholder="08xxxxxxxxxx"></label><button class="primary-button" id="send-receipt-wa" type="button">Kirim via WhatsApp ↗</button><button class="outline-button" id="print-receipt" type="button">Cetak struk</button><button class="outline-button" type="button" data-close="receipt-modal">Tutup</button></div></dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

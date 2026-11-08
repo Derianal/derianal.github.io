@@ -128,3 +128,22 @@ filterButtons.forEach((button) => {
 // KasirKu public demo disclaimer in both languages.
 translations.id.kasir_demo_note = "Demo publik menggunakan data simulasi lokal; spreadsheet asli tidak diakses.";
 translations.en.kasir_demo_note = "The public demo uses local sample data and does not access the original spreadsheet.";
+
+
+// Evidence-led case-study refinements (based on the dashboard snapshots already published).
+translations.id.analytics_eyebrow = "05 / STUDI KASUS & BUKTI KERJA";
+translations.en.analytics_eyebrow = "05 / CASE STUDIES & WORK EVIDENCE";
+translations.id.analytics_title = "Studi kasus dan <span class="text-accent">bukti kerja.</span>";
+translations.en.analytics_title = "Case studies and <span class="text-accent">work evidence.</span>";
+translations.id.analytics_intro = "Dua studi kasus menghubungkan lingkup pekerjaan dengan indikator Seller Center yang terdokumentasi. Angka ditampilkan sebagai snapshot pada periode terkait, bukan klaim hasil yang disebabkan satu individu.";
+translations.en.analytics_intro = "These case studies connect the work scope with documented Seller Center indicators. Figures are snapshots for the stated periods, not claims that one individual caused the results.";
+translations.id.case_scope_label = "LINGKUP PEKERJAAN";
+translations.en.case_scope_label = "SCOPE OF WORK";
+translations.id.case_ay_scope = "Lingkup pengalaman: membantu operasional toko A&Y FashionStyle dan Korina Style, menangani produk dan konten, mendukung live commerce, serta memantau performa toko.";
+translations.en.case_ay_scope = "Experience scope: supporting store operations for A&Y FashionStyle and Korina Style, handling products and content, supporting live commerce, and monitoring store performance.";
+translations.id.case_benih_scope = "Lingkup pengalaman: mendukung listing, penataan informasi produk, operasional beberapa toko, dan aktivitas penjualan pada kategori kebutuhan tanaman.";
+translations.en.case_benih_scope = "Experience scope: supporting product listings, product information, multi-store operations, and sales activities in the gardening supplies category.";
+translations.id.case_snapshot_note = "Angka ini mengikuti nilai yang tampil pada dashboard untuk periode tersebut. Angka menggambarkan snapshot performa toko; angka ini bukan klaim bahwa seluruh hasil disebabkan oleh kontribusi satu orang.";
+translations.en.case_snapshot_note = "Figures follow the values visible in the dashboard for the stated period. They are store-performance snapshots, not claims that all results were caused by one person's contribution.";
+translations.id.projects_note = "<strong>Catatan transparansi:</strong> kartu proyek menjelaskan ruang lingkup pengalaman. Angka kinerja yang terdokumentasi ditampilkan terpisah pada bagian Studi Kasus &amp; Bukti Kerja sebagai snapshot dashboard, bukan klaim hasil yang disebabkan satu individu. Informasi internal dan identitas akun tetap disamarkan.";
+translations.en.projects_note = "<strong>Transparency note:</strong> project cards describe the scope of experience. Documented performance figures appear separately in Case Studies &amp; Work Evidence as dashboard snapshots, not as claims that one individual caused the results. Internal information and account identifiers remain masked.";

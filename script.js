@@ -147,3 +147,7 @@ translations.id.case_snapshot_note = "Angka ini mengikuti nilai yang tampil pada
 translations.en.case_snapshot_note = "Figures follow the values visible in the dashboard for the stated period. They are store-performance snapshots, not claims that all results were caused by one person's contribution.";
 translations.id.projects_note = "<strong>Catatan transparansi:</strong> kartu proyek menjelaskan ruang lingkup pengalaman. Angka kinerja yang terdokumentasi ditampilkan terpisah pada bagian Studi Kasus &amp; Bukti Kerja sebagai snapshot dashboard, bukan klaim hasil yang disebabkan satu individu. Informasi internal dan identitas akun tetap disamarkan.";
 translations.en.projects_note = "<strong>Transparency note:</strong> project cards describe the scope of experience. Documented performance figures appear separately in Case Studies &amp; Work Evidence as dashboard snapshots, not as claims that one individual caused the results. Internal information and account identifiers remain masked.";
+
+
+// Re-apply language after case-study copy is registered (keeps first-load ID/EN consistent).
+applyLanguage(document.documentElement.lang || 'id');

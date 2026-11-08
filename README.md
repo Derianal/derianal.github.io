@@ -1,33 +1,41 @@
-# KasirKu — Demo Portofolio Derian Alfriansyah
+# Portofolio Derian Alfriansyah — Versi 9
 
-Demo web POS ringan yang **mengikuti alur aplikasi KasirKu asli**, tetapi berjalan memakai data contoh di browser agar aman dipamerkan di website portofolio.
+Website statis ringan menggunakan HTML, CSS, dan JavaScript. Dibuat untuk dijalankan melalui GitHub Pages tanpa framework atau build tools.
 
-## Alur yang direpresentasikan
+## Isi paket
+- `index.html`, `style.css`, `script.js` — website portofolio utama, animasi platform, bilingual ID/EN, grafik analitik, dan tautan kontak.
+- `assets/` — foto profil dan dokumentasi event yang digunakan di portofolio.
+- `kasirku/` — demo interaktif KasirKu yang dapat dibuka dari tombol **Coba Demo KasirKu** pada kartu proyek.
 
-1. Katalog produk dari tiga sumber konsep HPP: harga online Benih Baik, harga offline Benih Baik, dan katalog rempah.
-2. SKU, nama produk, HPP, harga online, harga offline 1 pcs, 10 pcs, dan 20+ pcs.
-3. Sinkronisasi katalog yang meniru perilaku aplikasi asli: harga/HPP manual yang sudah diisi dipertahankan; sinkronisasi mengisi nilai yang kosong. Produk baru diberi stok awal 0.
-4. Perubahan HPP/harga aktif dari aplikasi, pengembalian harga ke nilai sumber, serta penambahan stok.
-5. Kasir dengan pilihan mode harga, pencarian produk, keranjang, edit harga satuan pada transaksi, validasi stok, pembayaran Tunai atau pencatatan QRIS, dan perhitungan kembalian.
-6. Checkout mengurangi stok, membuat ID transaksi, menghitung laba kotor dari harga jual dikurangi HPP, dan mencatat metode pembayaran.
-7. Riwayat transaksi, ringkasan omzet/laba, analisis periode hari ini/7 hari/30 hari/tanggal tertentu, grafik, dan 5 produk terlaris.
-8. Struk dapat dicetak atau dibagikan ke WhatsApp pelanggan melalui tautan berbagi.
+## Pembaruan versi 9
+- Demo KasirKu dirapikan agar lebih dekat dengan alur aplikasi KasirKu yang dikembangkan Derian.
+- Menampilkan katalog sumber Benih Baik/Rempah, SKU, HPP, harga online, harga offline 1 pcs, 10 pcs, dan 20+ pcs.
+- Simulasi sinkronisasi mempertahankan harga aktif yang diedit manual dan hanya mengisi nilai yang masih kosong.
+- Pengelolaan stok, edit harga, kembalikan harga ke sumber, keranjang, edit harga satuan pada transaksi, validasi stok, checkout Tunai/QRIS, ID transaksi, dan kembalian.
+- Riwayat transaksi, analisis omzet dan laba kotor per periode, grafik, lima produk terlaris, struk cetak, dan berbagi struk melalui WhatsApp.
+- Demo publik berjalan terpisah menggunakan data contoh lokal. Tidak mengakses spreadsheet sumber atau data operasional toko.
 
-## Batasan demo publik
+## Batasan penting demo publik
+- Nama produk, SKU, HPP, harga, stok, dan transaksi awal di folder `kasirku/` adalah data contoh, bukan data aktual.
+- Data demo disimpan di `localStorage` browser dan tidak tersinkron antarperangkat.
+- Sinkronisasi katalog adalah simulasi aturan sinkronisasi, bukan koneksi Google Sheets.
+- QRIS hanya dicatat sebagai metode pembayaran demo. Tidak ada QR dinamis, payment gateway, atau verifikasi pembayaran.
+- Struk dan pembagian WhatsApp diberi keterangan demo; bukan bukti pembayaran sungguhan.
+- Jangan masukkan data pelanggan atau transaksi nyata ke demo publik.
 
-- Seluruh produk, SKU, HPP, harga, stok, dan transaksi awal adalah **data contoh yang dibuat untuk demonstrasi**. Bukan data aktual dari toko atau spreadsheet Derian.
-- Penyimpanan menggunakan `localStorage` browser. Tidak sinkron antarperangkat dan tidak terhubung ke Google Sheets.
-- Tombol sinkronisasi menjalankan simulasi aturan sinkronisasi katalog. Tombol tidak mengakses spreadsheet.
-- QRIS adalah pencatatan metode pembayaran simulasi. Tidak menghasilkan QR dinamis, tidak terhubung ke bank/payment gateway, dan tidak memverifikasi pembayaran.
-- Struk dan WhatsApp berisi keterangan demo; bukan bukti pembayaran sungguhan.
-- Jangan memasukkan transaksi atau data pelanggan nyata ke demo publik.
+## Alur aplikasi KasirKu asli
+Versi kerja KasirKu menggunakan Google Apps Script untuk membaca sumber katalog HPP, mengelola tab stok, menyimpan transaksi, dan menyediakan analisis. Demo publik hanya merepresentasikan alur tersebut agar pengunjung portofolio dapat mencoba fitur tanpa mengakses spreadsheet asli.
 
-## Hubungan dengan proyek asli
+## Publikasi ke GitHub Pages
+1. Buka repository `derianal.github.io` yang sama.
+2. Unggah dan ganti file root `index.html`, `style.css`, `script.js`, dan `README.md` dari paket ini.
+3. Unggah folder `kasirku/` beserta seluruh isinya ke root repository. Pastikan file demo berada di `kasirku/index.html`, `kasirku/app.css`, dan `kasirku/app.js`.
+4. Pertahankan folder `assets/` portofolio yang berisi foto profil dan dokumentasi. Paket ini menyertakan salinannya dengan nama yang sama.
+5. Commit changes. GitHub Pages akan memperbarui website setelah proses deployment selesai.
 
-Kode KasirKu asli menggunakan Google Apps Script sebagai backend dan Google Sheets sebagai sumber katalog HPP, penyimpanan stok, dan pencatatan transaksi. Demo ini mempertahankan alur/konsep utama tersebut untuk presentasi portofolio, tanpa mengekspos spreadsheet, ID, atau data operasional asli.
+Alamat utama: `https://derianal.github.io/`
 
-## Menjalankan dan menerbitkan
+Alamat demo: `https://derianal.github.io/kasirku/`
 
-- Lokal: buka `index.html` di browser modern.
-- GitHub Pages: unggah isi folder `kasirku/` ke folder `kasirku/` di root repository portofolio. URL demo menjadi `https://USERNAME.github.io/kasirku/`.
-- PWA: setelah dibuka dari HTTPS, Chrome Android dapat menawarkan menu Install app / Add to Home screen. Ini aplikasi web yang dipasang ke layar utama, bukan file APK native.
+## Menjalankan secara lokal
+Buka `index.html` portofolio melalui browser. Untuk demo KasirKu, buka `kasirku/index.html`. PWA/service worker memerlukan hosting HTTPS seperti GitHub Pages.

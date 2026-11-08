@@ -151,3 +151,38 @@ translations.en.projects_note = "<strong>Transparency note:</strong> project car
 
 // Re-apply language after case-study copy is registered (keeps first-load ID/EN consistent).
 applyLanguage(document.documentElement.lang || 'id');
+
+
+// Documentation gallery captions and accessible image descriptions.
+translations.id.proof_eyebrow = "DOKUMENTASI DASHBOARD";
+translations.en.proof_eyebrow = "DASHBOARD DOCUMENTATION";
+translations.id.proof_title = "Bukti visual dari aktivitas toko & LIVE";
+translations.en.proof_title = "Visual evidence from store & LIVE activity";
+translations.id.proof_intro = "Dokumentasi layar Seller Center dan TikTok LIVE yang mendukung snapshot metrik di atas. Bagian identitas, percakapan, serta detail produk yang tidak diperlukan telah dipotong.";
+translations.en.proof_intro = "Seller Center and TikTok LIVE screen documentation supporting the metric snapshots above. Unneeded identity details, chats, and product details have been cropped out.";
+translations.id.proof_seller_title = "Seller Center · Ringkasan toko";
+translations.en.proof_seller_title = "Seller Center · Store summary";
+translations.id.proof_seller_desc = "13 Apr–12 Mei 2026 · GMV Rp61.225.239 · 431 produk terjual · 428 pesanan SKU · 412 pesanan";
+translations.en.proof_seller_desc = "Apr 13–May 12, 2026 · GMV IDR 61,225,239 · 431 products sold · 428 SKU orders · 412 orders";
+translations.id.proof_live1_title = "TikTok LIVE · Snapshot 01";
+translations.en.proof_live1_title = "TikTok LIVE · Snapshot 01";
+translations.id.proof_live1_desc = "GMV Rp149.400 · 1 produk terjual saat sesi";
+translations.en.proof_live1_desc = "GMV IDR 149,400 · 1 product sold during the session";
+translations.id.proof_live2_title = "TikTok LIVE · Snapshot 02";
+translations.en.proof_live2_title = "TikTok LIVE · Snapshot 02";
+translations.id.proof_live2_desc = "GMV Rp761.318 · 5 produk terjual saat sesi";
+translations.en.proof_live2_desc = "GMV IDR 761,318 · 5 products sold during the session";
+translations.id.proof_live3_title = "TikTok LIVE · Snapshot 03";
+translations.en.proof_live3_title = "TikTok LIVE · Snapshot 03";
+translations.id.proof_live3_desc = "GMV Rp3.394.145 · 21 produk terjual saat sesi";
+translations.en.proof_live3_desc = "GMV IDR 3,394,145 · 21 products sold during the session";
+translations.id.proof_note = "Catatan: angka LIVE merupakan snapshot pada sesi yang berbeda, bukan total bulanan dan bukan perbandingan langsung yang setara.";
+translations.en.proof_note = "Note: LIVE figures are snapshots from different sessions, not monthly totals or directly comparable like-for-like results.";
+
+// Refresh copy and image alt text after registering gallery translations.
+document.querySelectorAll('.proof-image').forEach((image) => {
+  const language = document.documentElement.lang || 'id';
+  const alt = language === 'en' ? image.dataset.altEn : image.dataset.altId;
+  if (alt) image.setAttribute('alt', alt);
+});
+applyLanguage(document.documentElement.lang || 'id');

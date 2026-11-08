@@ -133,8 +133,8 @@ translations.en.kasir_demo_note = "The public demo uses local sample data and do
 // Evidence-led case-study refinements (based on the dashboard snapshots already published).
 translations.id.analytics_eyebrow = "05 / STUDI KASUS & BUKTI KERJA";
 translations.en.analytics_eyebrow = "05 / CASE STUDIES & WORK EVIDENCE";
-translations.id.analytics_title = "Studi kasus dan <span class="text-accent">bukti kerja.</span>";
-translations.en.analytics_title = "Case studies and <span class="text-accent">work evidence.</span>";
+translations.id.analytics_title = 'Studi kasus dan <span class="text-accent">bukti kerja.</span>';
+translations.en.analytics_title = 'Case studies and <span class="text-accent">work evidence.</span>';
 translations.id.analytics_intro = "Dua studi kasus menghubungkan lingkup pekerjaan dengan indikator Seller Center yang terdokumentasi. Angka ditampilkan sebagai snapshot pada periode terkait, bukan klaim hasil yang disebabkan satu individu.";
 translations.en.analytics_intro = "These case studies connect the work scope with documented Seller Center indicators. Figures are snapshots for the stated periods, not claims that one individual caused the results.";
 translations.id.case_scope_label = "LINGKUP PEKERJAAN";

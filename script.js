@@ -186,3 +186,9 @@ document.querySelectorAll('.proof-image').forEach((image) => {
   if (alt) image.setAttribute('alt', alt);
 });
 applyLanguage(document.documentElement.lang || 'id');
+
+
+// Downloadable CV button labels.
+translations.id.hero_button_cv = "Download CV ↓";
+translations.en.hero_button_cv = "Download CV ↓";
+applyLanguage(document.documentElement.lang || 'id');

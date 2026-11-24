@@ -8,7 +8,7 @@ Website statis ringan menggunakan HTML, CSS, dan JavaScript. Dibuat untuk dijala
 - `kasirku/` — demo interaktif KasirKu yang dapat dibuka dari tombol **Coba Demo KasirKu** pada kartu proyek.
 
 ## Pembaruan versi 10
-- Section baru **05 / Sertifikat & Pembelajaran** berisi lima sertifikat (UICI, MySkill ×2, ICPR, Youth Empowerment Festival) di `assets/certificates/`.
+- Section baru **05 / Sertifikat & Pembelajaran** berisi tujuh sertifikat (UICI ×3, MySkill ×2, ICPR, Youth Empowerment Festival) di `assets/certificates/`.
 - Contoh video UGC berbantuan AI di bawah kartu proyek (`assets/content/`), sudah dikompres dan diberi label AI.
 - Periode A&Y FashionStyle & Korina Style disamakan menjadi 2026 sesuai dokumentasi Seller Center.
 - Tambah favicon, meta Open Graph (preview saat link dibagikan), canonical, `robots.txt`, dan `sitemap.xml`.

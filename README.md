@@ -1,4 +1,4 @@
-# Portofolio Derian Alfriansyah — Versi 9
+# Portofolio Derian Alfriansyah — Versi 10
 
 Website statis ringan menggunakan HTML, CSS, dan JavaScript. Dibuat untuk dijalankan melalui GitHub Pages tanpa framework atau build tools.
 
@@ -6,6 +6,15 @@ Website statis ringan menggunakan HTML, CSS, dan JavaScript. Dibuat untuk dijala
 - `index.html`, `style.css`, `script.js` — website portofolio utama, animasi platform, bilingual ID/EN, grafik analitik, dan tautan kontak.
 - `assets/` — foto profil dan dokumentasi event yang digunakan di portofolio.
 - `kasirku/` — demo interaktif KasirKu yang dapat dibuka dari tombol **Coba Demo KasirKu** pada kartu proyek.
+
+## Pembaruan versi 10
+- Section baru **05 / Sertifikat & Pembelajaran** berisi lima sertifikat (UICI, MySkill ×2, ICPR, Youth Empowerment Festival) di `assets/certificates/`.
+- Contoh video UGC berbantuan AI di bawah kartu proyek (`assets/content/`), sudah dikompres dan diberi label AI.
+- Periode A&Y FashionStyle & Korina Style disamakan menjadi 2026 sesuai dokumentasi Seller Center.
+- Tambah favicon, meta Open Graph (preview saat link dibagikan), canonical, `robots.txt`, dan `sitemap.xml`.
+- Tombol Download CV juga ada di bagian Kontak.
+- Perbaikan: teks alternatif gambar kini ikut berganti saat bahasa EN dipilih.
+- File duplikat/tidak terpakai di root (salinan foto, ikon, manifest, dan service worker KasirKu) dihapus; versi aslinya tetap ada di `assets/` dan `kasirku/`.
 
 ## Pembaruan versi 9
 - Demo KasirKu dirapikan agar lebih dekat dengan alur aplikasi KasirKu yang dikembangkan Derian.

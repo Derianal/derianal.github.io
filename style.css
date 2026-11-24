@@ -172,3 +172,35 @@
   .evidence-photo-grid{grid-template-columns:1fr}
   .evidence-photo-card img{height:auto;max-height:230px}
 }
+
+/* Version 10: UGC sample, certificates, tidy-ups */
+.site-nav{gap:26px}
+@media(max-width:1060px) and (min-width:701px){.site-nav{gap:15px;font-size:12px}.brand-muted{display:none}}
+.content-sample{display:grid;grid-template-columns:260px 1fr;gap:34px;align-items:center;margin-top:28px;padding:22px;border:1px solid #e5e8ed;border-radius:19px;background:#fff;box-shadow:0 8px 26px rgba(20,30,50,.035)}
+.content-video{position:relative;margin:0;border-radius:14px;overflow:hidden;background:#101827;aspect-ratio:9/16}
+.content-video video{display:block;width:100%;height:100%;object-fit:cover}
+.ai-badge{position:absolute;top:10px;left:10px;padding:5px 8px;border-radius:6px;background:rgba(11,18,32,.78);color:#cfd6ff;font:700 8px var(--font-display);letter-spacing:.12em;pointer-events:none}
+.content-sample-copy h3{margin:0 0 10px;color:#19243a;font-size:22px;line-height:1.25;letter-spacing:-.04em}
+.content-sample-copy>p:not(.eyebrow){color:#687386;font-size:13px;line-height:1.8;margin-bottom:14px}
+.content-sample-copy .eyebrow{margin-bottom:12px}
+.sample-points{margin:0 0 16px;padding:0;list-style:none;display:grid;gap:8px}
+.sample-points li{position:relative;padding-left:20px;color:#4d5a70;font-size:12px;line-height:1.6}
+.sample-points li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:#8f9cff}
+.sample-note{display:block;padding-top:12px;border-top:1px solid #e7eaf0;color:#7b8495;font-size:10px;line-height:1.7}
+.cert-section{background:#eceff5;color:var(--text)}
+.cert-section h2{max-width:520px}
+.cert-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.cert-card{margin:0;display:flex;flex-direction:column;border:1px solid #e0e5ec;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 8px 22px rgba(22,35,58,.045);transition:transform .25s,box-shadow .25s}
+.cert-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(22,35,58,.09)}
+.cert-card>a{display:block;background:#f3f5f9;border-bottom:1px solid #e7eaf0}
+.cert-card img{display:block;width:100%;height:auto;aspect-ratio:1.414/1;object-fit:contain}
+.cert-card figcaption{display:flex;flex-direction:column;gap:4px;padding:14px 16px 16px}
+.cert-type{align-self:flex-start;margin-bottom:4px;padding:3px 7px;border-radius:5px;background:#eef0fb;color:#6674bb;font:700 8px var(--font-display);letter-spacing:.13em}
+.cert-org{color:#7b8495;font-size:10px}
+.cert-card strong{color:#19243a;font:800 15px/1.35 var(--font-display);letter-spacing:-.02em}
+.cert-card small{color:#687386;font-size:11px;line-height:1.6}
+.cert-note{margin:20px 0 0;color:#7b8495;font-size:11px;line-height:1.7}
+.contact-actions .button{margin:0 8px 10px 0}
+@media(max-width:900px){.cert-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.content-sample{grid-template-columns:1fr;gap:20px;padding:16px}.content-video{max-width:300px;width:100%;margin-inline:auto}.content-sample-copy h3{font-size:19px}}
+@media(max-width:520px){.cert-grid{grid-template-columns:1fr}}
